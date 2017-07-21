@@ -3,5 +3,10 @@ var time = date.toLocaleTimeString();
 
 setTimeout(function()
 {
-	$(".thankyou-message").append('<div class="order-time">Ώρα Παραγγελίας: ' + time + '</div>');
+	var $thankyouMessageDiv = $(".thankyou-message");
+
+	if ($thankyouMessageDiv.length > 0)
+	{
+		$thankyouMessageDiv.append('<div class="order-time">Ώρα Παραγγελίας: ' + time + '</div>');
+	}
 }, 500);
