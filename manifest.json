@@ -1,0 +1,16 @@
+{
+  "name": "e-FOOD Order Clock",
+  "version": "1.0.0",
+  "description": "We add your order time on e-FOOD Thank you page.",
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-2.0.2.min.js", "background.js" ],
+    "css": ["customStyles.css"],
+    "matches": [ "https://www.e-food.gr/orders/thankyou*"]
+  }]
+}
