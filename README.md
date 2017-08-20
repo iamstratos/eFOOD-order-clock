@@ -1,4 +1,4 @@
-eFOOD Order Clock - Google Chrome Plugin
+eFOOD Order Clock
 ===============================
 
 eFOOD Order Clock is a Google Chrome Plugin that shows:
@@ -6,7 +6,6 @@ eFOOD Order Clock is a Google Chrome Plugin that shows:
 * countdown the delivery time
 
 ---------------
-You can download the working version below:
-https://chrome.google.com/webstore/detail/e-food-order-clock/adpmhnbpnjnpeojaclekgicnnamecimf
+You can download the working version [here](https://chrome.google.com/webstore/detail/e-food-order-clock/adpmhnbpnjnpeojaclekgicnnamecimf)
 
 More features coming soon!
