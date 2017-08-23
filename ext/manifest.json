@@ -11,11 +11,20 @@
   "browser_action": {
     "name": "Manipulate DOM",
     "icons": ["icons/icon19.png"],
-    "default_icon": "icons/icon19.png"
+    "default_icon": "icons/icon19.png",
+    "default_popup": "popup.html"
   },
   "content_scripts": [ {
-    "js": [ "jquery-2.0.2.min.js", "background.js" ],
+    "js": [ "jquery-2.0.2.min.js", "content.js" ],
     "css": ["customStyles.css"],
     "matches": [ "https://www.e-food.gr/orders/thankyou*"]
-  }]
+  }],
+  "permissions": [
+    "cookies",
+    "*://*.e-food.gr/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
 }
