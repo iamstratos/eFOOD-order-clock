@@ -14,8 +14,8 @@ setTimeout(function()
 	if ($thankyouMessageDiv.length > 0)
 	{
 		$thankyouMessageDiv.append('<div class="order-time">Παράδοση σε: ' + onlyNums + ' \' - Ώρα Παραγγελίας: ' + time + '</div>');
-		// chrome.extension.sendMessage( "σε " + onlyNums + "'" );
-		chrome.extension.sendMessage( onlyNums );
+		chrome.extension.sendMessage( "σε " + onlyNums + "'" );
+		// chrome.extension.sendMessage( onlyNums );
 	}
 	   
 	var timer = setInterval(function() {
@@ -29,6 +29,6 @@ setTimeout(function()
 	    	$('.thankyou-message h2 strong').text("σύντομα!");
 	    	clearInterval(timer);
 	    }
-	}, 60 * 50);
+	}, 60 * 1000);
 
 }, 500);

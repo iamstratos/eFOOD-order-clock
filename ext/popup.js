@@ -4,5 +4,5 @@ $(function()
         deliveryMins = bg.rawTime,
         $deliveryElem = $('#delivery-time');
 
-        $deliveryElem .text("Παράδοση σε " + deliveryMins + "'");  
+        $deliveryElem .text("Παράδοση " + deliveryMins);  
 });
