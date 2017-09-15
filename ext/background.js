@@ -6,9 +6,15 @@ chrome.extension.onMessage.addListener(function(response, sender, sendResponse) 
     if (onlyRawNum > 1)
     {
         chrome.browserAction.setBadgeText({text: onlyRawNum });
+        console.log('onlyRawNum: ' + onlyRawNum)
     }
     else if (onlyRawNum <= 1)
     {
-         chrome.browserAction.setBadgeText({text: '' });   
+         chrome.browserAction.setBadgeText({text: '' });
+         console.log('onlyRawNum: ' + onlyRawNum) 
+    }
+    else
+    {
+        chrome.browserAction.setBadgeText({text: '' });
     }
 });
