@@ -1,6 +1,6 @@
 {
   "name": "e-FOOD Order Clock",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "We add your order time on e-FOOD Thank you page.",
   "manifest_version": 2,
   "icons": {
